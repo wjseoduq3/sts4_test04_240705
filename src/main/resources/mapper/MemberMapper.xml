@@ -14,13 +14,16 @@
     		SELECT count(*) FROM membertbl WHERE mid=#{param1}
     	</select>
     	
+    	<!-- 전체회원목록 가져오기 -->
+    	<select id="memberListDao" resultType="com.jdy.member.dto.MemberDto">
+    		select * from membertbl
+    	</select>
     	
     	
     	
     	
     	
-    	
-    	
+    	   	
     	
     	
     
