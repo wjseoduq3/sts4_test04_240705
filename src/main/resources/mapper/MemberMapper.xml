@@ -19,6 +19,10 @@
     		select * from membertbl
     	</select>
     	
+    	<delete id="deleteDao">
+    		delete from membertbl where mid=#{param1}
+    	</delete>
+    	
     	
     	
     	

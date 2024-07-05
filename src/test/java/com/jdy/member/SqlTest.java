@@ -31,8 +31,19 @@ public class SqlTest {
 			System.out.print(memberDto.getMemail() + "/");
 			System.out.print(memberDto.getMdate() + "/\n");
 			System.out.println("----------------------------\n");
+			
+			
 		}
 	
+	}
+	
+	@Test
+	@DisplayName("회원삭제테스트")
+	public void delete() {
+		MemberDao memberDao = sqlSession.getMapper(MemberDao.class);
+		memberDao.deleteDao("tiger");
+		
+		memberList();
 	}
 	
 
